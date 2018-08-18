@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: './base.html',
+  styleUrls: ['./base.css']
 })
-export class AppComponent {
+
+export class BaseComponent {
   title = 'my-cv';
 }
