@@ -37,3 +37,10 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# angular files
+angular.json
+
+# node files
+package.json
+package-lock.json
