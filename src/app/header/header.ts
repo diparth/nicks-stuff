@@ -6,4 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: [ './header.scss' ]
 })
 
-export class HeaderComponent { }
+export class HeaderComponent {
+  public navMenu: string[] = [
+    'About',
+    'Education',
+    'Experience',
+    'Projects',
+    'Contact'
+  ];
+}
