@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'cv-root',
+  selector: 'dp-root',
   templateUrl: './base.html',
-  styleUrls: ['./base.css']
+  styleUrls: ['./base.scss']
 })
 
-export class BaseComponent {
-  title = 'my-cv';
-}
+export class BaseComponent { }
