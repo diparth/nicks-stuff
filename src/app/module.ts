@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { BaseComponent } from './base/base';
 import { HeaderComponent } from './header/header';
+import { SidebarComponent } from './sidebar/sidebar';
 
 @NgModule({
   declarations: [
     BaseComponent,
-    HeaderComponent
+    HeaderComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule
