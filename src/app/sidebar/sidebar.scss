@@ -1,5 +1,8 @@
 @import 'utils';
 
 section {
-  @include set-center-body();
+  float: left;
+  width: 100%;
+  padding: 10px 0;
+  margin: 10px 0;
 }

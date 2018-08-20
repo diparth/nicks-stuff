@@ -1,0 +1,13 @@
+@import 'utils';
+
+section {
+  @include set-center-body();
+}
+
+dp-sidebar, dp-spotlight {
+  display: inline-block;
+}
+
+dp-sidebar {
+  width: 25%;
+}
