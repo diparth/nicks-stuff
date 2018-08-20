@@ -1,7 +1,8 @@
+@import 'utils';
+
 section {
-  margin: 0 auto;
+  @include set-center-body();
   padding-top: 20px;
-  max-width: 1280px;
 }
 
 .header {
@@ -24,11 +25,11 @@ section {
     display: inline-block;
 
     a {
-      color: #e9e9e9;
+      color: $background;
     }
 
     a:hover {
-      background-color: #254246;
+      background-color: $a-hover;
     }
   }
 }
@@ -40,9 +41,14 @@ section {
   margin-right: 1px;
 }
 
-.resume {
+a.resume {
   float: right;
   padding: 15px;
+  color: #436d72;
+}
+
+a.resume:hover {
+  color: #254246;
 }
 
 a, a:hover {
