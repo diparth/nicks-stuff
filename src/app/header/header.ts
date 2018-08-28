@@ -7,11 +7,26 @@ import { Component } from '@angular/core';
 })
 
 export class HeaderComponent {
-  public navMenu: string[] = [
-    'About',
-    'Education',
-    'Experience',
-    'Projects',
-    'Contact'
+  public navMenu: NavItem[] = [
+    {
+      name: 'About',
+      state: 'about'
+    },
+    {
+      name: 'Education',
+      state: 'education'
+    },
+    {
+      name: 'Experience',
+      state: 'experience'
+    },
+    {
+      name: 'Projects',
+      state: 'projects'
+    },
+    {
+      name: 'Contacts',
+      state: 'contacts'
+    }
   ];
 }
