@@ -26,7 +26,7 @@ export class HeaderComponent {
     },
     {
       name: 'Contacts',
-      state: 'contacts'
+      state: 'contact'
     }
   ];
 }
