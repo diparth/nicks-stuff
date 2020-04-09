@@ -2,16 +2,19 @@
 
 section {
   @include set-center-body();
-  padding-top: 20px;
+  width: 80%;
+  padding-top: step(3);
 }
 
 .header {
+  font-size: step(2);
+  line-height: step(3);
   width: 100%;
-  font-size: 20px;
 }
 
 .nav-item {
-  background-color: #436d72;
+  //background-color: $font;
+  background-color: getHighContrast();
   display: inline-block;
   padding: 15px;
   margin-right: 1px;
@@ -19,8 +22,10 @@ section {
 
 .logo {
   background-color: transparent !important;
-  color: #436d72;
-  padding: 15px 30px 15px 0
+  //color: $font;
+  color: getHighContrast();
+  padding: 15px 30px 15px 0;
+  font-size: step(3);
 }
 
 .nav-ul {
@@ -37,19 +42,21 @@ section {
     }
 
     a:hover {
-      background-color: $a-hover;
+      //background-color: $font;
+      background-color: $a-hover2;
     }
   }
 }
 
 a.resume {
   float: right;
-  padding: 15px;
-  color: #436d72;
+  padding: step(2);
+  font-size: step(2.5);
+  color: getHighContrast();
 }
 
 a.resume:hover {
-  color: #254246;
+  color: $a-hover2;
 }
 
 a, a:hover {

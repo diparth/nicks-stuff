@@ -1,4 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:100,200,300,400,500,600,700,800');
+
+// Breakpoints
 $breakpoint-sm: 320;
 $breakpoint-md: 640;
 $breakpoint-lg: 960;
 $breakpoint-xlg: 1280;
+
+//Fonts
+$global_font: 'Montserrat', sans-serif;
+$logo_font: 'Kaushan Script', cursive;
+
+// Other
+$global_step: 8px;
