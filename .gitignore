@@ -44,3 +44,4 @@ Thumbs.db
 # node files
 /package.json
 /package-lock.json
+/browserslist
