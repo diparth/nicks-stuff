@@ -1,9 +1,9 @@
 import { Ng2StateDeclaration } from '@uirouter/angular';
 import { AboutComponent } from './pages/about/about';
-import {EducationComponent} from './pages/education/education';
-import {ExperienceComponent} from './pages/experience/experience';
-import {ProjectsComponent} from './pages/projects/projects';
-import {ContactsComponent} from './pages/contacts/contacts';
+import { EducationComponent } from './pages/education/education';
+import { ExperienceComponent } from './pages/experience/experience';
+import { ProjectsComponent } from './pages/projects/projects';
+import { ContactsComponent } from './pages/contacts/contacts';
 
 export const DP_ROUTES: Ng2StateDeclaration[] = [
   {

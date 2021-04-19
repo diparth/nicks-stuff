@@ -1,14 +1,16 @@
 {
   "extends": "../tsconfig.json",
+  "compileOnSave": true,
   "compilerOptions": {
     "outDir": "../out-tsc/app",
     "types": []
   },
   "files": [
     "main.ts",
-    "polyfills.ts"
+    "polyfills.ts",
+    "typings/navbar.d.ts"
   ],
   "include": [
-    "src/**/*.d.ts"
+    "src/typings/*.d.ts"
   ]
 }
