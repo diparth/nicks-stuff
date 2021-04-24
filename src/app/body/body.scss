@@ -1,0 +1,22 @@
+@import 'utils';
+
+section {
+  @include set-center-body();
+  max-width: 80%;
+  margin: auto;
+}
+
+dp-sidebar, dp-spotlight {
+  float: left;
+}
+
+dp-sidebar {
+  padding: step(2) 0 0;
+}
+
+dp-spotlight {
+  width: 75%;
+  padding: step(2);
+  margin: step(2) 0 0;
+  background-color: $body-background;
+}

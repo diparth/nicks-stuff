@@ -1,0 +1,9 @@
+<section>
+  <div class="header">
+    <div class="logo nav-item">diparth.patel</div>
+    <ul class="nav-ul">
+      <li *ngFor="let nav of navMenu"><a class="nav-item" [uiSref]="nav.state">{{ nav.name }}</a></li>
+    </ul>
+    <a class="resume" href="#">Resume <i class="fas fa-cloud-download-alt"></i></a>
+  </div>
+</section>
