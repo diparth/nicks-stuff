@@ -2,4 +2,105 @@
 
 section {
   font-family: $global_font;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.center-piece {
+  text-align: center;
+  width: 100%;
+  max-width: 80%;
+  margin: auto;
+}
+
+.subhead {
+  max-width: 78px;
+  margin: auto;
+}
+
+div.wb {
+  position: relative;
+  font-family: $kaushan-font;
+  font-weight: 900;
+  font-size: 86px;
+  color: #fff;
+  width: 216px;
+  height: 216px;
+  margin: auto;
+}
+
+.wb .letters-container {
+  position: absolute;
+  left: 0;
+  right: 8px;
+  top: -48px;
+  bottom: 0;
+  margin: auto;
+  height: 83px;
+}
+
+.wb .letters {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  line-height: 60px;
+  right: 0;
+  top: 0;
+}
+
+.wb .bang {
+  font-size: 86px;
+  top: 22px;
+  left: 0;
+}
+
+.wb .circle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+
+.wb .circle-white {
+  width: 3em;
+  height: 3em;
+  border: 2px dashed white;
+  border-radius: 2em;
+}
+
+.wb .circle-dark {
+  width: 156px;
+  height: 156px;
+  background-color: #4f7b86;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.wb .circle-dark-dashed {
+  border-radius: 2.4em;
+  background-color: transparent;
+  border: 2px dashed #4f7b86;
+  width: 168px;
+  height: 168px;
+}
+
+.display-4 {
+  font-size: 22px;
+  font-weight: lighter;
+  line-height: 1.2;
+
+  @include if-wider-than(small-desktop) {
+    font-size: 40px;
+  }
+}
+
+.display-1 {
+  font-size: 40px;
+
+  @include if-wider-than(small-desktop) {
+    font-size: 96px;
+  }
 }
