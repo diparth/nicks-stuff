@@ -8,8 +8,7 @@ import { ContactsComponent } from './old-components/pages/contacts/contacts';
 export const DP_ROUTES: Ng2StateDeclaration[] = [
   {
     name: 'base',
-    url: '/',
-    redirectTo: 'about'
+    url: '/'
   },
   {
     name: 'about',
