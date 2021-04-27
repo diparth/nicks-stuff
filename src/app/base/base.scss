@@ -1,17 +1,27 @@
-@import 'utils';
+@import "utils";
 
 section {
   font-family: $global_font;
   display: flex;
+  flex-direction: column;
   align-items: center;
   height: 100vh;
+  // background-color: #ede0d4;
+  background-color: $app-bg;
+}
+
+.bg-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .center-piece {
   text-align: center;
   width: 100%;
-  max-width: 80%;
+  max-width: 90%;
   margin: auto;
+  z-index: 100;
 }
 
 .subhead {
@@ -24,83 +34,109 @@ div.wb {
   font-family: $kaushan-font;
   font-weight: 900;
   font-size: 86px;
-  color: #fff;
+  color: $app-bg;
   width: 216px;
   height: 216px;
   margin: auto;
 }
 
-.wb .letters-container {
-  position: absolute;
-  left: 0;
-  right: 8px;
-  top: -48px;
-  bottom: 0;
-  margin: auto;
-  height: 83px;
+.wb {
+  & .letters-container {
+    position: absolute;
+    left: 0;
+    right: 8px;
+    top: -48px;
+    bottom: 0;
+    margin: auto;
+    height: 83px;
+  }
+
+  & .letters {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    line-height: 60px;
+    right: 0;
+    top: 0;
+  }
+
+  & .bang {
+    font-size: 86px;
+    top: 22px;
+    left: 0;
+  }
+
+  & .circle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+  }
+
+  & .circle-white {
+    width: 3em;
+    height: 3em;
+    border: 2px dashed white;
+    border-radius: 2em;
+  }
+
+  & .circle-dark {
+    width: 156px;
+    height: 156px;
+    // background-color: #4f7b86;
+    background-color: $circle-fill;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  & .circle-dark-dashed {
+    border-radius: 2.4em;
+    background-color: transparent;
+    // border: 2px dashed #4f7b86;
+    border: 2px dashed $circle-fill;
+    width: 168px;
+    height: 168px;
+  }
 }
 
-.wb .letters {
-  position: relative;
-  z-index: 2;
-  display: inline-block;
-  line-height: 60px;
-  right: 0;
-  top: 0;
-}
-
-.wb .bang {
-  font-size: 86px;
-  top: 22px;
-  left: 0;
-}
-
-.wb .circle {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-}
-
-.wb .circle-white {
-  width: 3em;
-  height: 3em;
-  border: 2px dashed white;
-  border-radius: 2em;
-}
-
-.wb .circle-dark {
-  width: 156px;
-  height: 156px;
-  background-color: #4f7b86;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.wb .circle-dark-dashed {
-  border-radius: 2.4em;
-  background-color: transparent;
-  border: 2px dashed #4f7b86;
-  width: 168px;
-  height: 168px;
-}
-
-.display-4 {
+.subtitle {
   font-size: 22px;
   font-weight: lighter;
   line-height: 1.2;
 
   @include if-wider-than(small-desktop) {
-    font-size: 40px;
+    font-size: 48px;
   }
 }
 
-.display-1 {
+.title {
+  font-family: $global_font;
   font-size: 40px;
+  color: $font-dark;
 
   @include if-wider-than(small-desktop) {
     font-size: 96px;
   }
+}
+
+.self {
+  font-family: $kaushan-font;
+  // text-align: right;
+  width: 80%;
+  margin: auto;
+  max-width: 320px;
+  font-size: 18px;
+
+  @include if-wider-than(small-desktop) {
+    max-width: 700px;
+    font-size: 24px;
+  }
+}
+
+.footer {
+  background-color: $circle-fill;
+  height: 86px;
+  width: 100%;
 }
