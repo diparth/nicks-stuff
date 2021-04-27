@@ -45,3 +45,6 @@ Thumbs.db
 /package.json
 /package-lock.json
 /browserslist
+
+# Firebase files
+.firebase/

@@ -17,7 +17,7 @@ export class BaseComponent implements OnInit, AfterViewInit {
   public ngOnInit(): void {
     this.title = "Coming Soon!";
     this.subtitle1 = "Stay tuned, ";
-    this.subtitle2 = " something awesome is";
+    this.subtitle2 = "Something awesome is";
   }
 
   public ngAfterViewInit(): void {
