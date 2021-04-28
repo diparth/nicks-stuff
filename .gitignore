@@ -51,3 +51,4 @@ Thumbs.db
 .firebase/hosting.ZGlzdC9uaWNrcy1zdHVmZg.cache
 .firebaserc
 .github/workflows/firebase-hosting-pull-request.yml
+firebase-debug.log
