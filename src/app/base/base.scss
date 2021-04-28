@@ -137,6 +137,37 @@ div.wb {
 
 .footer {
   background-color: $circle-fill;
-  height: 86px;
+  height: 132px;
   width: 100%;
+}
+
+.social-box {
+  width: 100%;
+  max-width: 250px;
+  height: 32px;
+  margin: auto;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-around;
+
+  a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    color: $app-bg;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  @include if-wider-than(small-desktop) {
+    height: 40px;
+
+    a {
+      width: 24px;
+      height: 24px;
+      font-size: 24px;
+    }
+  }
 }
