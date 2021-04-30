@@ -47,8 +47,7 @@ Thumbs.db
 /browserslist
 
 # Firebase files
-.firebase/
-.firebase/hosting.ZGlzdC9uaWNrcy1zdHVmZg.cache
+.firebase/*.cache
 .firebaserc
 .github/workflows/firebase-hosting-pull-request.yml
 firebase-debug.log

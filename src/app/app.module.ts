@@ -14,6 +14,7 @@ import { ContactsComponent } from './old-components/pages/contacts/contacts';
 import { EducationComponent } from './old-components/pages/education/education';
 import { ExperienceComponent } from './old-components/pages/experience/experience';
 import { ProjectsComponent } from './old-components/pages/projects/projects';
+import { ComingSoonComponent } from './coming-soon/coming-soon';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ProjectsComponent } from './old-components/pages/projects/projects';
     ContactsComponent,
     EducationComponent,
     ExperienceComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ComingSoonComponent
   ],
   imports: [
     BrowserModule,
