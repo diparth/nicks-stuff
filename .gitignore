@@ -45,3 +45,10 @@ Thumbs.db
 /package.json
 /package-lock.json
 /browserslist
+
+# Firebase files
+.firebase/*.cache
+.firebaserc
+.github/workflows/firebase-hosting-pull-request.yml
+firebase-debug.log
+*.cache

@@ -1,15 +1,17 @@
 import { Ng2StateDeclaration } from '@uirouter/angular';
-import { AboutComponent } from './pages/about/about';
-import { EducationComponent } from './pages/education/education';
-import { ExperienceComponent } from './pages/experience/experience';
-import { ProjectsComponent } from './pages/projects/projects';
-import { ContactsComponent } from './pages/contacts/contacts';
+
+import { ExperienceComponent } from './old-components/pages/experience/experience';
+import { EducationComponent } from './old-components/pages/education/education';
+import { ProjectsComponent } from './old-components/pages/projects/projects';
+import { ContactsComponent } from './old-components/pages/contacts/contacts';
+import { AboutComponent } from './old-components/pages/about/about';
+import { ComingSoonComponent } from './coming-soon/coming-soon';
 
 export const DP_ROUTES: Ng2StateDeclaration[] = [
   {
     name: 'base',
     url: '/',
-    redirectTo: 'about'
+    redirectTo: 'coming-soon'
   },
   {
     name: 'about',
@@ -35,5 +37,10 @@ export const DP_ROUTES: Ng2StateDeclaration[] = [
     name: 'contact',
     url: '/contact',
     component: ContactsComponent
+  },
+  {
+    name: 'coming-soon',
+    url: '/coming-soon',
+    component: ComingSoonComponent
   }
 ];
