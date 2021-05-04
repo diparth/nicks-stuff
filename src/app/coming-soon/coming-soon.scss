@@ -56,7 +56,7 @@ div.wb {
     z-index: 2;
     display: inline-block;
     line-height: 60px;
-    right: 0;
+    right: 6px;
     top: 0;
   }
 
@@ -139,13 +139,16 @@ div.wb {
   background-color: $circle-fill;
   height: 132px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .social-box {
   width: 100%;
   max-width: 250px;
   height: 32px;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   align-items: flex-end;
   flex-direction: row;
@@ -170,4 +173,13 @@ div.wb {
       font-size: 24px;
     }
   }
+}
+
+.copyright {
+  font-family: "Montserrat", sans-serif;
+  color: #f7f2ff;
+  font-size: 12px;
+  width: 200px;
+  text-align: center;
+  margin: 12px auto;
 }
