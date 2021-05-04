@@ -5,7 +5,7 @@ import { EducationComponent } from './old-components/pages/education/education';
 import { ProjectsComponent } from './old-components/pages/projects/projects';
 import { ContactsComponent } from './old-components/pages/contacts/contacts';
 import { AboutComponent } from './old-components/pages/about/about';
-import { ComingSoonComponent } from './coming-soon/coming-soon';
+import { ComingSoonComponent } from './components/coming-soon/coming-soon';
 
 export const DP_ROUTES: Ng2StateDeclaration[] = [
   {
