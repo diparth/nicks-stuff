@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 import { BodyComponent } from './old-components/body/body';
-import { BaseComponent } from './base/base';
+import { AppComponent } from './app/app';
 import { HeaderComponent } from './old-components/header/header';
 import { SidebarComponent } from './old-components/sidebar/sidebar';
 import { SpotlightComponent } from './old-components/spotlight/spotlight';
@@ -18,7 +18,7 @@ import { ComingSoonComponent } from './coming-soon/coming-soon';
 
 @NgModule({
   declarations: [
-    BaseComponent,
+    AppComponent,
     HeaderComponent,
     SidebarComponent,
     BodyComponent,
@@ -36,6 +36,6 @@ import { ComingSoonComponent } from './coming-soon/coming-soon';
     UIRouterModule.forRoot({ states: DP_ROUTES })
   ],
   providers: [],
-  bootstrap: [ BaseComponent ]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
