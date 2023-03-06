@@ -14,19 +14,20 @@ p {
 }
 
 .dp {
+  padding-top: 24px;
+
   img {
-    width: 100%;
-    max-width: 186px;
+    width: 186px;
     display: block;
     border-radius: 50%;
-    padding-top: 20px;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 }
 
 .details {
   border-bottom: 1px solid #ababab;
+  padding-bottom: 10px;
 
   .name {
     font-size: 26px;
@@ -39,7 +40,7 @@ p {
 }
 
 .contact-block {
-  padding: 12px 8px;
+  padding: 24px 8px 20px;
 
   .info-icons {
     width: 16px;
@@ -58,5 +59,25 @@ p {
       text-decoration: underline;
       color: #5592ed;
     }
+  }
+}
+
+.actions-block {
+  button {
+    border: 1px solid #848484;
+    border-radius: 6px;
+    background-color: $circle-fill;
+    color: #848484;
+    padding: 8px 12px;
+    margin-bottom: 20px;
+    width: 100%;
+
+    &:hover {
+      background-color: #3c3c3c;
+    }
+  }
+
+  img {
+    width: 22px;
   }
 }
