@@ -9,7 +9,16 @@ export class InfoBarComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  public vcfData: string = `
+    BEGIN:VCARD
+    VERSION:3.0
+    N:Diparth Patel
+    EMAIL;type=INTERNET;type=WORK;type=pref:pateldiparth309@gmail.com
+    TEL;type=IPHONE;type=CELL;type=VOICE;type=pref:+1 (226) 961-6511
+    END:VCARD
+  `;
+
+  public ngOnInit(): void {
   }
 
 }

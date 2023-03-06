@@ -7,7 +7,8 @@ $breakpoint-lg: 960;
 $breakpoint-xlg: 1280;
 
 //Fonts
-$global_font: 'Montserrat', sans-serif;
+// $global_font: 'Montserrat', monospace;
+$global_font: system-ui, monospace;
 
 // Extra Fonts
 $caveat-font: 'Caveat Brush', cursive;
@@ -20,6 +21,6 @@ $global_step: 8px;
 $footer_height: 112px;
 
 // Colors
-$circle-fill: #565656;
-$font-dark: #353535;
+$circle-fill: #2e2e2e;
+$font-dark: #252525;
 $app-bg: #ffffff;
