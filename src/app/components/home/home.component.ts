@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  public hello: string = `\u{1F44B}`;
+  public skill: string = `\u{1F4BB}`; // U+1F9D1 U+200D U+1F4BB
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

@@ -1,0 +1,43 @@
+@import "utils";
+
+:host {
+  display: block;
+}
+
+section.main-container {
+  max-width: 960px;
+  margin: auto;
+  padding: 52px 0 20px 0;
+}
+
+.about-block {
+  margin-bottom: 20px;
+  padding: 0 20px;
+
+  .abt-title {
+    margin: 0 0 40px 0;
+    font-family: $global_font;
+    font-weight: 600;
+    font-size: 40px;
+    color: $font-dark;
+  }
+
+  .abt-desc {
+    margin: 0 0 32px 0;
+    font-family: $font-serif;
+    font-size: 18px;
+    color: $font-light;
+  }
+}
+
+.skills-block {
+  margin: 42px 0 20px;
+  padding: 0 20px;
+
+  .skill-title {
+    margin: 0 0 40px 0;
+    font-family: $global_font;
+    font-weight: 600;
+    color: $font-dark;
+  }
+}
