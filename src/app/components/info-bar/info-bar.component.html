@@ -10,12 +10,19 @@
 
   <div class="contact-block">
     <p><img class="info-icons" src="assets/icons/location.svg" /> Toronto, Ontario, Canada</p>
-    <p><img class="info-icons" src="assets/icons/phone.svg" /> <a class="info-link" href="tel:2269616511">+1 (226) 961-6511</a></p>
-    <p><img class="info-icons" src="assets/icons/email.svg" /> <a class="info-link" href="mailto:pateldiparth309@gmail.com">pateldiparth309@gmail.com</a></p>
+    <p>
+      <img class="info-icons" src="assets/icons/phone.svg" />
+      <a class="info-link" href="tel:2269616511">+1 (226) 961-6511</a>
+      <img class="copy" (click)="copyText('+1 (226) 961-6511')" src="assets/icons/copy.svg" />
+    </p>
+    <p>
+      <img class="info-icons" src="assets/icons/email.svg" />
+      <a class="info-link" href="mailto:pateldiparth309@gmail.com">pateldiparth309@gmail.com</a>
+      <img class="copy" (click)="copyText('pateldiparth309@gmail.com')" src="assets/icons/copy.svg" /></p>
   </div>
 
   <div class="actions-block">
-    <button (click)="downloadVCard()"><img src="assets/icons/download.svg" /> Contact Card</button>
+    <!-- <button (click)="downloadVCard()"><img src="assets/icons/download.svg" /> Contact Card</button> -->
     <button><img src="assets/icons/download.svg" /> Resume</button>
   </div>
 </section>

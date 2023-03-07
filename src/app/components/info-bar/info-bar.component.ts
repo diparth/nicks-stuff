@@ -37,4 +37,8 @@ export class InfoBarComponent implements OnInit {
     REV:${new Date().toISOString()}
     END:VCARD`.replace(/^\s\s\s\s/gm, ``);
   }
+
+  public copyText(text: string): void {
+    navigator.clipboard.writeText(text);
+  }
 }

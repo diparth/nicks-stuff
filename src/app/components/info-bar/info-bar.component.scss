@@ -60,6 +60,18 @@ p {
       color: #5592ed;
     }
   }
+
+  .copy {
+    padding: 2px;
+    margin-left: 4px;
+    width: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: #3c3c3c;
+    }
+  }
 }
 
 .actions-block {
