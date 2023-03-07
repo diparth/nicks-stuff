@@ -11,6 +11,22 @@ section.app-container {
   display: flex;
 }
 
+.info-toast {
+  display: inline-block;
+  position: absolute;
+  padding: 8px 12px;
+  bottom: 2rem;
+  left: 2rem;
+  background-color: #fff;
+  border-radius: 4px;
+  min-width: 180px;
+
+  p {
+    margin: 0;
+    color: $circle-fill;
+  }
+}
+
 .body-container {
   width: 100%;
   height: 100vh;

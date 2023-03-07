@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataShareService } from 'src/app/services/data-share.service';
 
 @Component({
   selector: 'dp-info-bar',
@@ -6,10 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./info-bar.component.scss']
 })
 export class InfoBarComponent implements OnInit {
-
-  constructor() { }
-
   public vcfData: string;
+
+  constructor(private dataShareService: DataShareService) { }
 
   public ngOnInit(): void {
   }
@@ -40,5 +40,6 @@ export class InfoBarComponent implements OnInit {
 
   public copyText(text: string): void {
     navigator.clipboard.writeText(text);
+    this.dataShareService.showToast.next(true);
   }
 }
