@@ -8,10 +8,15 @@ import { DataShareService } from 'src/app/services/data-share.service';
 })
 export class InfoBarComponent implements OnInit {
   public vcfData: string;
+  public resumeLink: string = 'https://drive.google.com/file/d/1flPy3t0YvRmdtSP4nVk31VuGMnluJAww/view?usp=share_link';
 
   constructor(private dataShareService: DataShareService) { }
 
   public ngOnInit(): void {
+  }
+
+  public openResume(): void {
+    window.open(this.resumeLink, '_blank');
   }
 
   public downloadVCard(): void {

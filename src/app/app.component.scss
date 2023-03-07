@@ -34,4 +34,5 @@ section.app-container {
 
 .router-box {
   height: calc(100vh - $footer_height);
+  overflow: auto;
 }

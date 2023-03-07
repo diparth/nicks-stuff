@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+import { HomeComponent } from './components/home/home.component';
+
 export const routes: Routes = [
   {
     path: '',
@@ -8,7 +10,8 @@ export const routes: Routes = [
     redirectTo: 'home'
   },
   {
-    path: 'home'
+    path: 'home',
+    component: HomeComponent
   }
 ];
 
