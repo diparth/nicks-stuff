@@ -8,6 +8,8 @@ section.main-container {
   max-width: 960px;
   margin: auto;
   padding: 52px 0 20px 0;
+  border-bottom: 1px solid #2e2e2e;
+  margin-bottom: 12px;
 }
 
 .about-block {
@@ -92,7 +94,7 @@ section.main-container {
 }
 
 .work-block {
-  margin: 65px 0 20px;
+  margin: 56px 0 24px;
   padding: 0 20px;
 }
 
@@ -100,7 +102,13 @@ section.main-container {
   color: $font-dark;
 
   &:hover {
-    // filter: contrast(.5);
     color: #5592ed;
   }
+}
+
+.edu li {
+  margin-bottom: 12px;
+  font-family: $font-serif;
+  font-size: 18px;
+  color: $font-light;
 }
