@@ -3,7 +3,6 @@
 :host {
   display: block;
   width: 100%;
-  // border-top: 4px solid $circle-fill;
 }
 
 .footer {
@@ -18,7 +17,7 @@
 .social-box {
   width: 100%;
   max-width: 250px;
-  height: 32px;
+  height: 40px;
   margin: 0 auto;
   display: flex;
   align-items: flex-end;
@@ -27,22 +26,12 @@
 
   a {
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
     color: $circle-fill;
     text-decoration: none;
     text-align: center;
-  }
-
-  @include if-wider-than(small-desktop) {
-    height: 40px;
-
-    a {
-      width: 24px;
-      height: 24px;
-      font-size: 24px;
-    }
   }
 }
 
