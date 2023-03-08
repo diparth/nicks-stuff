@@ -31,7 +31,7 @@ section.main-container {
 }
 
 .skills-block {
-  margin: 42px 0 20px;
+  margin: 65px 0 20px;
   padding: 0 20px;
 
   .skill-title {
@@ -39,5 +39,54 @@ section.main-container {
     font-family: $global_font;
     font-weight: 600;
     color: $font-dark;
+  }
+
+  .skills {
+    margin-bottom: 42px;
+  }
+
+  .skillset-title {
+    margin: 0 0 32px 0;
+    font-family: $font-serif;
+    font-size: 18px;
+    color: $font-light;
+  }
+
+  .title-icon {
+    width: 24px;
+    position: relative;
+    bottom: 2px;
+  }
+
+  .skill-assets {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .skill-tile {
+    width: 130px;
+    margin: 0 20px 20px 0;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    padding: 10px 8px 0;
+  }
+
+  .asset-icon {
+    width: 80px;
+    border-radius: 4px;
+  }
+
+  .asset-label {
+    margin: 0;
+    padding: 10px 0;
+    font-family: $font-serif;
+    font-size: 12px;
+    color: $font-light;
+    text-align: center;
   }
 }
