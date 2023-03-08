@@ -1,14 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'dp-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 
   public hello: string = `\u{1F44B}`;
   public skillIcon: string = `\u{1F4BB}`;
+  public workIcon: string = `👨‍💻`;
+  public eduIcon: string = `\u{1F4DA}`;
 
   public skillCategories: any[] = [
     {
@@ -46,7 +48,4 @@ export class HomeComponent implements OnInit {
   ];
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 }

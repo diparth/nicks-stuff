@@ -21,25 +21,25 @@ section.main-container {
     font-size: 40px;
     color: $font-dark;
   }
+}
 
-  .abt-desc {
-    margin: 0 0 32px 0;
-    font-family: $font-serif;
-    font-size: 18px;
-    color: $font-light;
-  }
+.abt-desc {
+  margin: 0 0 32px 0;
+  font-family: $font-serif;
+  font-size: 18px;
+  color: $font-light;
+}
+
+.section-title {
+  margin: 0 0 40px 0;
+  font-family: $global_font;
+  font-weight: 600;
+  color: $font-dark;
 }
 
 .skills-block {
   margin: 65px 0 20px;
   padding: 0 20px;
-
-  .skill-title {
-    margin: 0 0 40px 0;
-    font-family: $global_font;
-    font-weight: 600;
-    color: $font-dark;
-  }
 
   .skills {
     margin-bottom: 42px;
@@ -88,5 +88,19 @@ section.main-container {
     font-size: 12px;
     color: $font-light;
     text-align: center;
+  }
+}
+
+.work-block {
+  margin: 65px 0 20px;
+  padding: 0 20px;
+}
+
+.exp-link {
+  color: $font-dark;
+
+  &:hover {
+    // filter: contrast(.5);
+    color: #5592ed;
   }
 }
