@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { ComingSoonComponent } from './components/coming-soon/coming-soon';
 import { FooterComponent } from './components/footer/footer';
 import { InfoBarComponent } from './components/info-bar/info-bar.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ComingSoonComponent,
     FooterComponent,
-    InfoBarComponent
+    InfoBarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

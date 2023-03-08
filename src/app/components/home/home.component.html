@@ -1,0 +1,46 @@
+<section class="main-container">
+  <div class="about-block">
+    <h2 class="abt-title">{{ hello }} Hi there</h2>
+    <p class="abt-desc">
+      I am a Software Developer with extensive experience in designing and developing high-quality websites and web applications.
+    </p>
+    <p class="abt-desc">
+      I have a strong understanding of user experience, web design principles, accessibility guidelines, and responsive design, which enables me to create visually appealing and intuitive web applications.
+    </p>
+    <p class="abt-desc">
+      I am a detail-oriented and collaborative team player who is passionate about creating innovative and user-friendly web solutions.
+    </p>
+  </div>
+
+  <div class="skills-block">
+    <h3 class="section-title">{{ skillIcon }} Tech Stack</h3>
+
+    <div class="skills" *ngFor="let skillSet of skillCategories">
+      <p class="skillset-title">
+        <img class="title-icon" src="assets/icons/{{ skillSet.asset }}" /> {{ skillSet.label }}
+      </p>
+
+      <div class="skill-assets">
+        <div class="skill-tile" *ngFor="let skill of skillSet.skills">
+          <img class="asset-icon" src="assets/icons/tech/{{ skill.asset }}" />
+          <p class="asset-label">{{ skill.label }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="work-block">
+    <h3 class="section-title">{{ workIcon }} Work Experience</h3>
+    <p class="abt-desc">
+      Please take a moment to review my <a class="exp-link" target="_blank" href="https://linkedin.com/in/diparth">LinkedIn</a> profile to view my most recent work experience.
+    </p>
+  </div>
+
+  <div class="work-block">
+    <h3 class="section-title">{{ eduIcon }} Education</h3>
+    <ul class="edu">
+      <li>I graduated with a Master of Science in Computer Science from the New York Institute of Technology (New York, NY) in 2017.</li>
+      <li>I pursued my Bachelor's in Information Technology from the Gujarat Technological University (Ahmedabad, Gujarat, India) in 2015.</li>
+    </ul>
+  </div>
+</section>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataShareService } from 'src/app/services/data-share.service';
 
 @Component({
   selector: 'dp-info-bar',
@@ -6,12 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./info-bar.component.scss']
 })
 export class InfoBarComponent implements OnInit {
-
-  constructor() { }
-
   public vcfData: string;
+  public resumeLink: string = 'https://drive.google.com/file/d/1flPy3t0YvRmdtSP4nVk31VuGMnluJAww/view?usp=share_link';
+
+  constructor(private dataShareService: DataShareService) { }
 
   public ngOnInit(): void {
+  }
+
+  public openResume(): void {
+    window.open(this.resumeLink, '_blank');
   }
 
   public downloadVCard(): void {
@@ -36,5 +41,10 @@ export class InfoBarComponent implements OnInit {
     ${'EMAIL;TYPE=email,PREF:pateldiparth309@gmail.com'}
     REV:${new Date().toISOString()}
     END:VCARD`.replace(/^\s\s\s\s/gm, ``);
+  }
+
+  public copyText(text: string): void {
+    navigator.clipboard.writeText(text);
+    this.dataShareService.showToast.next(true);
   }
 }

@@ -1,0 +1,114 @@
+@import "utils";
+
+:host {
+  display: block;
+}
+
+section.main-container {
+  max-width: 960px;
+  margin: auto;
+  padding: 52px 0 20px 0;
+  border-bottom: 1px solid #2e2e2e;
+  margin-bottom: 12px;
+}
+
+.about-block {
+  margin-bottom: 20px;
+  padding: 0 20px;
+
+  .abt-title {
+    margin: 0 0 40px 0;
+    font-family: $global_font;
+    font-weight: 600;
+    font-size: 40px;
+    color: $font-dark;
+  }
+}
+
+.abt-desc {
+  margin: 0 0 32px 0;
+  font-family: $font-serif;
+  font-size: 18px;
+  color: $font-light;
+}
+
+.section-title {
+  margin: 0 0 40px 0;
+  font-family: $global_font;
+  font-weight: 600;
+  color: $font-dark;
+}
+
+.skills-block {
+  margin: 65px 0 20px;
+  padding: 0 20px;
+
+  .skills {
+    margin-bottom: 42px;
+  }
+
+  .skillset-title {
+    margin: 0 0 32px 0;
+    font-family: $font-serif;
+    font-size: 18px;
+    color: $font-light;
+  }
+
+  .title-icon {
+    width: 24px;
+    position: relative;
+    bottom: 2px;
+  }
+
+  .skill-assets {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .skill-tile {
+    width: 130px;
+    margin: 0 20px 20px 0;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    padding: 10px 8px 0;
+  }
+
+  .asset-icon {
+    width: 80px;
+    border-radius: 4px;
+  }
+
+  .asset-label {
+    margin: 0;
+    padding: 10px 0;
+    font-family: $font-serif;
+    font-size: 12px;
+    color: $font-light;
+    text-align: center;
+  }
+}
+
+.work-block {
+  margin: 56px 0 24px;
+  padding: 0 20px;
+}
+
+.exp-link {
+  color: $font-dark;
+
+  &:hover {
+    color: #5592ed;
+  }
+}
+
+.edu li {
+  margin-bottom: 12px;
+  font-family: $font-serif;
+  font-size: 18px;
+  color: $font-light;
+}

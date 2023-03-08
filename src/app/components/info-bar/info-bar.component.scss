@@ -1,10 +1,13 @@
 @import "utils";
 
 section.info-bar-container {
-  height: 100vh;
-  width: 300px;
   padding: 12px 16px;
   background-color: $circle-fill;
+
+  @include if-wider-than(small-desktop) {
+    height: 100vh;
+    width: 300px;
+  }
 }
 
 h1,
@@ -44,7 +47,7 @@ p {
 
   .info-icons {
     width: 16px;
-    margin-right: 6px;
+    margin-right: 8px;
   }
 
   p {
@@ -58,6 +61,18 @@ p {
     &:hover {
       text-decoration: underline;
       color: #5592ed;
+    }
+  }
+
+  .copy {
+    padding: 2px;
+    margin-left: 4px;
+    width: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: #3c3c3c;
     }
   }
 }
