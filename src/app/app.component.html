@@ -1,10 +1,6 @@
 <section class="app-container">
   <dp-info-bar></dp-info-bar>
 
-  <div class="info-toast" *ngIf="showToast">
-    <p>&#x2713; Text Copied!</p>
-  </div>
-
   <div class="body-container">
     <div class="router-box">
       <router-outlet></router-outlet>
@@ -12,3 +8,7 @@
     <dp-footer></dp-footer>
   </div>
 </section>
+
+<div class="info-toast" *ngIf="showToast">
+  <p>&#x2713; Text Copied!</p>
+</div>
