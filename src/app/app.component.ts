@@ -1,6 +1,8 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { DataShareService } from './services/data-share.service';
 import { Subscription } from 'rxjs';
+
+import { DataShareService } from './services/data-share.service';
+import { Utils } from './helpers/utils';
 
 @Component({
   selector: 'dp-root',
@@ -26,6 +28,6 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   public ngOnDestroy(): void {
-
+    Utils.UnsubscribeAll(this.subscriptions);
   }
 }
