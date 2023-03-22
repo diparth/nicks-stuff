@@ -17,17 +17,18 @@ section.app-container {
 
 .info-toast {
   display: inline-block;
-  position: absolute;
+  position: fixed;
   padding: 8px 12px;
   bottom: 2rem;
   left: 2rem;
   background-color: #fff;
   border-radius: 4px;
-  min-width: 180px;
+  min-width: 160px;
+  border: 2px solid $font-light;
 
   p {
     margin: 0;
-    color: $circle-fill;
+    color: $font-light;
   }
 }
 

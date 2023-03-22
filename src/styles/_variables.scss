@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
 
 // Breakpoints
-$breakpoint-sm: 320;
-$breakpoint-md: 640;
-$breakpoint-lg: 960;
-$breakpoint-xlg: 1280;
+$breakpoint-sm: 320; // mobile
+$breakpoint-md: 640; // tablet
+$breakpoint-lg: 960; // small-desktop
+$breakpoint-xlg: 1280; // large-desktop
 
 //Fonts
 // $global_font: 'Montserrat', monospace;
