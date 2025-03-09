@@ -36,7 +36,8 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": {
-              "base": "dist/nicks-stuff"
+              "base": "dist/nicks-stuff",
+              "browser": ""
             },
             "index": "src/index.html",
             "polyfills": [
@@ -71,7 +72,7 @@
               "budgets": [
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "6kb"
+                  "maximumWarning": "15kb"
                 }
               ],
               "fileReplacements": [
